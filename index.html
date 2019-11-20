@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dog API Example</title>
+  <link rel="shortcut icon" href="#">
+  <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+<div class="container">
+  <h1>List a user's GitHub repos</h1>
+
+  <form id="listGenerator">
+    numberOfImages to display: <input type="text" name="numberOfImages"
+                                      id="numberOfImages" value="3"><br>
+    <input type="submit" value="Get a dog pic!">
+  </form>
+  <div id="validationMessageContainer"></div>
+  <div class="imageResults"></div>
+
+</div>
+
+<!--<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="-->
+<!--crossorigin="anonymous"></script>-->
+<script src="index.js"></script>
+
+</body>
+</html>
+
+<!--
+
+- "The user must be able to search for a GitHub user handle"
+  - Create a form that a user can input a GH username into
+
+
+- "The search must trigger a call to GitHub's API"
+  - Create a function that will make the call. You can make it empty at first.
+  - Verify that when the form is submitted the function is called.
+
+  - Proceed to create the function. It should pass the value submitted from the
+  form.
+    - I don't need to make the call yet actually. Just verify that I have the
+    form value.
+
+  - Once I know that the function is receiving the form value begin constructing
+  the get URL.
+    -https://api.github.com/users/[github-username]/repos
+
+
+- "The repos associated with that handle must be displayed on the page."
+  - In general I'll be taking the JSON response and displaying it using HTML.
+    - Specifically I'll need to iterate through the response object. Use a for
+    loop like I did with dog API app
+
+    - "You must display the repo name and link to the repo URL."
+      - In the iterating block, for each item: display the name of the repo.
+      - Hyperlink the display name with a link to the repo
+
+- "The user must be able to make multiple searches and see only the results for
+the current search."
+  - Try updating the function triggered after form submission such that it
+  clears html in the list div.
+
+
+-->
