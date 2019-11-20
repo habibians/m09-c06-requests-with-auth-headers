@@ -38,35 +38,43 @@
 
 - "The user must be able to search for a GitHub user handle"
   - Create a form that a user can input a GH username into
+  - Give the form an ID so that you can target it later
 
 
 - "The search must trigger a call to GitHub's API"
-  - Create a function that will make the call. You can make it empty at first.
-  - Verify that when the form is submitted the function is called.
+  - Create a function that will make the call. You can pseudo code the block
+  initially if you want
+  - Verify that when the form is submitted the function is called. Console log.
+
+  - Test by clicking submit.
 
   - Proceed to create the function. It should pass the value submitted from the
   form.
-    - I don't need to make the call yet actually. Just verify that I have the
-    form value.
+    - I can pseudo code again.
+    - Console out the value.
+    - Test by clicking submit.
 
   - Once I know that the function is receiving the form value begin constructing
   the get URL.
     -https://api.github.com/users/[github-username]/repos
+  - Console out the response.
 
 
 - "The repos associated with that handle must be displayed on the page."
   - In general I'll be taking the JSON response and displaying it using HTML.
     - Specifically I'll need to iterate through the response object. Use a for
-    loop like I did with dog API app
+    loop like I did with dog API app.
 
     - "You must display the repo name and link to the repo URL."
       - In the iterating block, for each item: display the name of the repo.
       - Hyperlink the display name with a link to the repo
+
 
 - "The user must be able to make multiple searches and see only the results for
 the current search."
   - Try updating the function triggered after form submission such that it
   clears html in the list div.
 
+- Verify that boilerplate HTML makes sense.
 
 -->
