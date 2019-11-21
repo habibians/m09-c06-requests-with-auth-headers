@@ -2,33 +2,27 @@
 <html lang="en">
 
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Dog API Example</title>
-  <link rel="shortcut icon" href="#">
-  <link rel="stylesheet" href="index.css">
+  <title>List a user's GitHub repos</title>
 
 </head>
 
 <body>
-
 <div class="container">
   <h1>List a user's GitHub repos</h1>
 
   <form id="listGenerator">
-    numberOfImages to display: <input type="text" name="numberOfImages"
-                                      id="numberOfImages" value="3"><br>
-    <input type="submit" value="Get a dog pic!">
+    <!--Search for github user: <input type="text" name="usernameInput" id="usernameInput" value="3"><br>-->
+    Search for github user: <input type="text" id="usernameInput"><br>
+    <input type="submit" value="Submit">
   </form>
-  <div id="validationMessageContainer"></div>
-  <div class="imageResults"></div>
+
+  <div id="listResults" class="listResults"></div>
 
 </div>
 
-<!--<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="-->
-<!--crossorigin="anonymous"></script>-->
 <script src="index.js"></script>
 
 </body>
@@ -56,7 +50,7 @@
 
   - Once I know that the function is receiving the form value begin constructing
   the get URL.
-    -https://api.github.com/users/[github-username]/repos
+    - https://api.github.com/users/[github-username]/repos
   - Console out the response.
 
 
@@ -75,6 +69,6 @@ the current search."
   - Try updating the function triggered after form submission such that it
   clears html in the list div.
 
-- Verify that boilerplate HTML makes sense.
+- Verify boilerplate HTML makes sense.
 
 -->
