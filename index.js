@@ -14,11 +14,7 @@ function getRepos(username) {
 }
 
 function displayResults(responseJson) {
-  // document.getElementById('div.listResults').innerHTML = "";
-
-  // let c = document.getElementById("listResults");
-  // while (c.lastChild) c.removeChild(c.lastChild);
-
+  clearResults();
 
   for (let i = 0; i < responseJson.length; i++) {
     let newEl = document.createElement('div');
@@ -31,4 +27,19 @@ function displayResults(responseJson) {
 
 function insertAfter(el, referenceNode) {
   referenceNode.parentNode.insertBefore(el, referenceNode.nextSibling);
+}
+
+function clearResults() {
+  console.log('clearResults() ran');
+
+  // document.getElementById('listResults').innerHTML = "";
+  // let c = document.getElementById("listResults");
+  // while (c.lastChild) c.removeChild(c.lastChild);
+
+  let myNode = document.querySelector('div.listResults');
+
+  while (myNode.firstChild) {
+    myNode.removeChild(myNode.firstChild);
+  }
+
 }
